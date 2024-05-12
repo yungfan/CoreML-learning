@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C0D1F7C2BF0513B006DFC12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1F7B2BF0513B006DFC12 /* AppDelegate.m */; };
+		3C0D1F7F2BF0513B006DFC12 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1F7E2BF0513B006DFC12 /* SceneDelegate.m */; };
+		3C0D1F822BF0513B006DFC12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1F812BF0513B006DFC12 /* ViewController.m */; };
+		3C0D1F852BF0513B006DFC12 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3C0D1F842BF0513B006DFC12 /* Base */; };
+		3C0D1F872BF0513B006DFC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0D1F862BF0513B006DFC12 /* Assets.xcassets */; };
+		3C0D1F8A2BF0513B006DFC12 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3C0D1F892BF0513B006DFC12 /* Base */; };
+		3C0D1F8D2BF0513B006DFC12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1F8C2BF0513B006DFC12 /* main.m */; };
+		3C0D1F972BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1F962BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCTests.m */; };
+		3C0D1FA12BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1FA02BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITests.m */; };
+		3C0D1FA32BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1FA22BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITestsLaunchTests.m */; };
+		3C0D1FB02BF05248006DFC12 /* best100.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1FAF2BF05248006DFC12 /* best100.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C0D1F932BF0513C006DFC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C0D1F6F2BF0513B006DFC12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C0D1F762BF0513B006DFC12;
+			remoteInfo = "CoreML- YOLOv8 Pork-OC";
+		};
+		3C0D1F9D2BF0513C006DFC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C0D1F6F2BF0513B006DFC12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C0D1F762BF0513B006DFC12;
+			remoteInfo = "CoreML- YOLOv8 Pork-OC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C0D1F772BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML- YOLOv8 Pork-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0D1F7A2BF0513B006DFC12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C0D1F7B2BF0513B006DFC12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C0D1F7D2BF0513B006DFC12 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3C0D1F7E2BF0513B006DFC12 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3C0D1F802BF0513B006DFC12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3C0D1F812BF0513B006DFC12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3C0D1F842BF0513B006DFC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C0D1F862BF0513B006DFC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C0D1F892BF0513B006DFC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C0D1F8B2BF0513B006DFC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0D1F8C2BF0513B006DFC12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C0D1F922BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML- YOLOv8 Pork-OCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0D1F962BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreML__YOLOv8_Pork_OCTests.m; sourceTree = "<group>"; };
+		3C0D1F9C2BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML- YOLOv8 Pork-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0D1FA02BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreML__YOLOv8_Pork_OCUITests.m; sourceTree = "<group>"; };
+		3C0D1FA22BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreML__YOLOv8_Pork_OCUITestsLaunchTests.m; sourceTree = "<group>"; };
+		3C0D1FAF2BF05248006DFC12 /* best100.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = best100.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C0D1F742BF0513B006DFC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0D1F8F2BF0513C006DFC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0D1F992BF0513C006DFC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C0D1F6E2BF0513B006DFC12 = {
+			isa = PBXGroup;
+			children = (
+				3C0D1F792BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC */,
+				3C0D1F952BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCTests */,
+				3C0D1F9F2BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCUITests */,
+				3C0D1F782BF0513B006DFC12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C0D1F782BF0513B006DFC12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C0D1F772BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC.app */,
+				3C0D1F922BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCTests.xctest */,
+				3C0D1F9C2BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C0D1F792BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC */ = {
+			isa = PBXGroup;
+			children = (
+				3C0D1FAF2BF05248006DFC12 /* best100.mlmodel */,
+				3C0D1F7A2BF0513B006DFC12 /* AppDelegate.h */,
+				3C0D1F7B2BF0513B006DFC12 /* AppDelegate.m */,
+				3C0D1F7D2BF0513B006DFC12 /* SceneDelegate.h */,
+				3C0D1F7E2BF0513B006DFC12 /* SceneDelegate.m */,
+				3C0D1F802BF0513B006DFC12 /* ViewController.h */,
+				3C0D1F812BF0513B006DFC12 /* ViewController.m */,
+				3C0D1F832BF0513B006DFC12 /* Main.storyboard */,
+				3C0D1F862BF0513B006DFC12 /* Assets.xcassets */,
+				3C0D1F882BF0513B006DFC12 /* LaunchScreen.storyboard */,
+				3C0D1F8B2BF0513B006DFC12 /* Info.plist */,
+				3C0D1F8C2BF0513B006DFC12 /* main.m */,
+			);
+			path = "CoreML- YOLOv8 Pork-OC";
+			sourceTree = "<group>";
+		};
+		3C0D1F952BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C0D1F962BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCTests.m */,
+			);
+			path = "CoreML- YOLOv8 Pork-OCTests";
+			sourceTree = "<group>";
+		};
+		3C0D1F9F2BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C0D1FA02BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITests.m */,
+				3C0D1FA22BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITestsLaunchTests.m */,
+			);
+			path = "CoreML- YOLOv8 Pork-OCUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C0D1F762BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0D1FA62BF0513C006DFC12 /* Build configuration list for PBXNativeTarget "CoreML- YOLOv8 Pork-OC" */;
+			buildPhases = (
+				3C0D1F732BF0513B006DFC12 /* Sources */,
+				3C0D1F742BF0513B006DFC12 /* Frameworks */,
+				3C0D1F752BF0513B006DFC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreML- YOLOv8 Pork-OC";
+			productName = "CoreML- YOLOv8 Pork-OC";
+			productReference = 3C0D1F772BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C0D1F912BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0D1FA92BF0513C006DFC12 /* Build configuration list for PBXNativeTarget "CoreML- YOLOv8 Pork-OCTests" */;
+			buildPhases = (
+				3C0D1F8E2BF0513C006DFC12 /* Sources */,
+				3C0D1F8F2BF0513C006DFC12 /* Frameworks */,
+				3C0D1F902BF0513C006DFC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C0D1F942BF0513C006DFC12 /* PBXTargetDependency */,
+			);
+			name = "CoreML- YOLOv8 Pork-OCTests";
+			productName = "CoreML- YOLOv8 Pork-OCTests";
+			productReference = 3C0D1F922BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C0D1F9B2BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0D1FAC2BF0513C006DFC12 /* Build configuration list for PBXNativeTarget "CoreML- YOLOv8 Pork-OCUITests" */;
+			buildPhases = (
+				3C0D1F982BF0513C006DFC12 /* Sources */,
+				3C0D1F992BF0513C006DFC12 /* Frameworks */,
+				3C0D1F9A2BF0513C006DFC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C0D1F9E2BF0513C006DFC12 /* PBXTargetDependency */,
+			);
+			name = "CoreML- YOLOv8 Pork-OCUITests";
+			productName = "CoreML- YOLOv8 Pork-OCUITests";
+			productReference = 3C0D1F9C2BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C0D1F6F2BF0513B006DFC12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					3C0D1F762BF0513B006DFC12 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					3C0D1F912BF0513C006DFC12 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 3C0D1F762BF0513B006DFC12;
+					};
+					3C0D1F9B2BF0513C006DFC12 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 3C0D1F762BF0513B006DFC12;
+					};
+				};
+			};
+			buildConfigurationList = 3C0D1F722BF0513B006DFC12 /* Build configuration list for PBXProject "CoreML- YOLOv8 Pork-OC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C0D1F6E2BF0513B006DFC12;
+			productRefGroup = 3C0D1F782BF0513B006DFC12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C0D1F762BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC */,
+				3C0D1F912BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCTests */,
+				3C0D1F9B2BF0513C006DFC12 /* CoreML- YOLOv8 Pork-OCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C0D1F752BF0513B006DFC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0D1F872BF0513B006DFC12 /* Assets.xcassets in Resources */,
+				3C0D1F8A2BF0513B006DFC12 /* Base in Resources */,
+				3C0D1F852BF0513B006DFC12 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0D1F902BF0513C006DFC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0D1F9A2BF0513C006DFC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C0D1F732BF0513B006DFC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0D1FB02BF05248006DFC12 /* best100.mlmodel in Sources */,
+				3C0D1F822BF0513B006DFC12 /* ViewController.m in Sources */,
+				3C0D1F7C2BF0513B006DFC12 /* AppDelegate.m in Sources */,
+				3C0D1F8D2BF0513B006DFC12 /* main.m in Sources */,
+				3C0D1F7F2BF0513B006DFC12 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0D1F8E2BF0513C006DFC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0D1F972BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0D1F982BF0513C006DFC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0D1FA12BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITests.m in Sources */,
+				3C0D1FA32BF0513C006DFC12 /* CoreML__YOLOv8_Pork_OCUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C0D1F942BF0513C006DFC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C0D1F762BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC */;
+			targetProxy = 3C0D1F932BF0513C006DFC12 /* PBXContainerItemProxy */;
+		};
+		3C0D1F9E2BF0513C006DFC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C0D1F762BF0513B006DFC12 /* CoreML- YOLOv8 Pork-OC */;
+			targetProxy = 3C0D1F9D2BF0513C006DFC12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C0D1F832BF0513B006DFC12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C0D1F842BF0513B006DFC12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C0D1F882BF0513B006DFC12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C0D1F892BF0513B006DFC12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C0D1FA42BF0513C006DFC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C0D1FA52BF0513C006DFC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C0D1FA72BF0513C006DFC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML- YOLOv8 Pork-OC/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.developer.cn.CoreML--YOLOv8-Pork-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C0D1FA82BF0513C006DFC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML- YOLOv8 Pork-OC/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.developer.cn.CoreML--YOLOv8-Pork-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C0D1FAA2BF0513C006DFC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.developer.cn.CoreML--YOLOv8-Pork-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML- YOLOv8 Pork-OC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreML- YOLOv8 Pork-OC";
+			};
+			name = Debug;
+		};
+		3C0D1FAB2BF0513C006DFC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.developer.cn.CoreML--YOLOv8-Pork-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML- YOLOv8 Pork-OC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoreML- YOLOv8 Pork-OC";
+			};
+			name = Release;
+		};
+		3C0D1FAD2BF0513C006DFC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.developer.cn.CoreML--YOLOv8-Pork-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML- YOLOv8 Pork-OC";
+			};
+			name = Debug;
+		};
+		3C0D1FAE2BF0513C006DFC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.developer.cn.CoreML--YOLOv8-Pork-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML- YOLOv8 Pork-OC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C0D1F722BF0513B006DFC12 /* Build configuration list for PBXProject "CoreML- YOLOv8 Pork-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0D1FA42BF0513C006DFC12 /* Debug */,
+				3C0D1FA52BF0513C006DFC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C0D1FA62BF0513C006DFC12 /* Build configuration list for PBXNativeTarget "CoreML- YOLOv8 Pork-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0D1FA72BF0513C006DFC12 /* Debug */,
+				3C0D1FA82BF0513C006DFC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C0D1FA92BF0513C006DFC12 /* Build configuration list for PBXNativeTarget "CoreML- YOLOv8 Pork-OCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0D1FAA2BF0513C006DFC12 /* Debug */,
+				3C0D1FAB2BF0513C006DFC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C0D1FAC2BF0513C006DFC12 /* Build configuration list for PBXNativeTarget "CoreML- YOLOv8 Pork-OCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0D1FAD2BF0513C006DFC12 /* Debug */,
+				3C0D1FAE2BF0513C006DFC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C0D1F6F2BF0513B006DFC12 /* Project object */;
+}

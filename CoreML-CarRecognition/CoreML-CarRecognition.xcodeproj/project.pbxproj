@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C052C872832A2EE002074F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C052C862832A2EE002074F1 /* Main.storyboard */; };
+		3C30F92428329BF1009DEF32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30F92328329BF1009DEF32 /* AppDelegate.swift */; };
+		3C30F92628329BF1009DEF32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30F92528329BF1009DEF32 /* SceneDelegate.swift */; };
+		3C30F92828329BF1009DEF32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30F92728329BF1009DEF32 /* ViewController.swift */; };
+		3C30F92D28329BF2009DEF32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C30F92C28329BF2009DEF32 /* Assets.xcassets */; };
+		3C30F93028329BF2009DEF32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C30F92E28329BF2009DEF32 /* LaunchScreen.storyboard */; };
+		3C30F93B28329BF3009DEF32 /* CoreML_CarRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30F93A28329BF3009DEF32 /* CoreML_CarRecognitionTests.swift */; };
+		3C30F94528329BF3009DEF32 /* CoreML_CarRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30F94428329BF3009DEF32 /* CoreML_CarRecognitionUITests.swift */; };
+		3C30F94728329BF3009DEF32 /* CoreML_CarRecognitionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30F94628329BF3009DEF32 /* CoreML_CarRecognitionUITestsLaunchTests.swift */; };
+		3C30F95428329C6A009DEF32 /* CarRecognition.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C30F95328329C6A009DEF32 /* CarRecognition.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C30F93728329BF3009DEF32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C30F91828329BF1009DEF32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C30F91F28329BF1009DEF32;
+			remoteInfo = "CoreML-CarRecognition";
+		};
+		3C30F94128329BF3009DEF32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C30F91828329BF1009DEF32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C30F91F28329BF1009DEF32;
+			remoteInfo = "CoreML-CarRecognition";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C052C862832A2EE002074F1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3C30F92028329BF1009DEF32 /* CoreML-CarRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML-CarRecognition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C30F92328329BF1009DEF32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C30F92528329BF1009DEF32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3C30F92728329BF1009DEF32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C30F92C28329BF2009DEF32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C30F92F28329BF2009DEF32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C30F93128329BF2009DEF32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C30F93628329BF3009DEF32 /* CoreML-CarRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-CarRecognitionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C30F93A28329BF3009DEF32 /* CoreML_CarRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_CarRecognitionTests.swift; sourceTree = "<group>"; };
+		3C30F94028329BF3009DEF32 /* CoreML-CarRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-CarRecognitionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C30F94428329BF3009DEF32 /* CoreML_CarRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_CarRecognitionUITests.swift; sourceTree = "<group>"; };
+		3C30F94628329BF3009DEF32 /* CoreML_CarRecognitionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_CarRecognitionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C30F95328329C6A009DEF32 /* CarRecognition.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CarRecognition.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C30F91D28329BF1009DEF32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C30F93328329BF3009DEF32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C30F93D28329BF3009DEF32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C30F91728329BF1009DEF32 = {
+			isa = PBXGroup;
+			children = (
+				3C30F92228329BF1009DEF32 /* CoreML-CarRecognition */,
+				3C30F93928329BF3009DEF32 /* CoreML-CarRecognitionTests */,
+				3C30F94328329BF3009DEF32 /* CoreML-CarRecognitionUITests */,
+				3C30F92128329BF1009DEF32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C30F92128329BF1009DEF32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C30F92028329BF1009DEF32 /* CoreML-CarRecognition.app */,
+				3C30F93628329BF3009DEF32 /* CoreML-CarRecognitionTests.xctest */,
+				3C30F94028329BF3009DEF32 /* CoreML-CarRecognitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C30F92228329BF1009DEF32 /* CoreML-CarRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				3C30F95328329C6A009DEF32 /* CarRecognition.mlmodel */,
+				3C052C862832A2EE002074F1 /* Main.storyboard */,
+				3C30F92328329BF1009DEF32 /* AppDelegate.swift */,
+				3C30F92528329BF1009DEF32 /* SceneDelegate.swift */,
+				3C30F92728329BF1009DEF32 /* ViewController.swift */,
+				3C30F92C28329BF2009DEF32 /* Assets.xcassets */,
+				3C30F92E28329BF2009DEF32 /* LaunchScreen.storyboard */,
+				3C30F93128329BF2009DEF32 /* Info.plist */,
+			);
+			path = "CoreML-CarRecognition";
+			sourceTree = "<group>";
+		};
+		3C30F93928329BF3009DEF32 /* CoreML-CarRecognitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C30F93A28329BF3009DEF32 /* CoreML_CarRecognitionTests.swift */,
+			);
+			path = "CoreML-CarRecognitionTests";
+			sourceTree = "<group>";
+		};
+		3C30F94328329BF3009DEF32 /* CoreML-CarRecognitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C30F94428329BF3009DEF32 /* CoreML_CarRecognitionUITests.swift */,
+				3C30F94628329BF3009DEF32 /* CoreML_CarRecognitionUITestsLaunchTests.swift */,
+			);
+			path = "CoreML-CarRecognitionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C30F91F28329BF1009DEF32 /* CoreML-CarRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C30F94A28329BF3009DEF32 /* Build configuration list for PBXNativeTarget "CoreML-CarRecognition" */;
+			buildPhases = (
+				3C30F91C28329BF1009DEF32 /* Sources */,
+				3C30F91D28329BF1009DEF32 /* Frameworks */,
+				3C30F91E28329BF1009DEF32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreML-CarRecognition";
+			productName = "CoreML-CarRecognition";
+			productReference = 3C30F92028329BF1009DEF32 /* CoreML-CarRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C30F93528329BF3009DEF32 /* CoreML-CarRecognitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C30F94D28329BF3009DEF32 /* Build configuration list for PBXNativeTarget "CoreML-CarRecognitionTests" */;
+			buildPhases = (
+				3C30F93228329BF3009DEF32 /* Sources */,
+				3C30F93328329BF3009DEF32 /* Frameworks */,
+				3C30F93428329BF3009DEF32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C30F93828329BF3009DEF32 /* PBXTargetDependency */,
+			);
+			name = "CoreML-CarRecognitionTests";
+			productName = "CoreML-CarRecognitionTests";
+			productReference = 3C30F93628329BF3009DEF32 /* CoreML-CarRecognitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C30F93F28329BF3009DEF32 /* CoreML-CarRecognitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C30F95028329BF3009DEF32 /* Build configuration list for PBXNativeTarget "CoreML-CarRecognitionUITests" */;
+			buildPhases = (
+				3C30F93C28329BF3009DEF32 /* Sources */,
+				3C30F93D28329BF3009DEF32 /* Frameworks */,
+				3C30F93E28329BF3009DEF32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C30F94228329BF3009DEF32 /* PBXTargetDependency */,
+			);
+			name = "CoreML-CarRecognitionUITests";
+			productName = "CoreML-CarRecognitionUITests";
+			productReference = 3C30F94028329BF3009DEF32 /* CoreML-CarRecognitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C30F91828329BF1009DEF32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3C30F91F28329BF1009DEF32 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					3C30F93528329BF3009DEF32 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3C30F91F28329BF1009DEF32;
+					};
+					3C30F93F28329BF3009DEF32 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3C30F91F28329BF1009DEF32;
+					};
+				};
+			};
+			buildConfigurationList = 3C30F91B28329BF1009DEF32 /* Build configuration list for PBXProject "CoreML-CarRecognition" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C30F91728329BF1009DEF32;
+			productRefGroup = 3C30F92128329BF1009DEF32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C30F91F28329BF1009DEF32 /* CoreML-CarRecognition */,
+				3C30F93528329BF3009DEF32 /* CoreML-CarRecognitionTests */,
+				3C30F93F28329BF3009DEF32 /* CoreML-CarRecognitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C30F91E28329BF1009DEF32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C052C872832A2EE002074F1 /* Main.storyboard in Resources */,
+				3C30F93028329BF2009DEF32 /* LaunchScreen.storyboard in Resources */,
+				3C30F92D28329BF2009DEF32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C30F93428329BF3009DEF32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C30F93E28329BF3009DEF32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C30F91C28329BF1009DEF32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C30F92828329BF1009DEF32 /* ViewController.swift in Sources */,
+				3C30F95428329C6A009DEF32 /* CarRecognition.mlmodel in Sources */,
+				3C30F92428329BF1009DEF32 /* AppDelegate.swift in Sources */,
+				3C30F92628329BF1009DEF32 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C30F93228329BF3009DEF32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C30F93B28329BF3009DEF32 /* CoreML_CarRecognitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C30F93C28329BF3009DEF32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C30F94528329BF3009DEF32 /* CoreML_CarRecognitionUITests.swift in Sources */,
+				3C30F94728329BF3009DEF32 /* CoreML_CarRecognitionUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C30F93828329BF3009DEF32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C30F91F28329BF1009DEF32 /* CoreML-CarRecognition */;
+			targetProxy = 3C30F93728329BF3009DEF32 /* PBXContainerItemProxy */;
+		};
+		3C30F94228329BF3009DEF32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C30F91F28329BF1009DEF32 /* CoreML-CarRecognition */;
+			targetProxy = 3C30F94128329BF3009DEF32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C30F92E28329BF2009DEF32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C30F92F28329BF2009DEF32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C30F94828329BF3009DEF32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C30F94928329BF3009DEF32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C30F94B28329BF3009DEF32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML-CarRecognition/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-CarRecognition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C30F94C28329BF3009DEF32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML-CarRecognition/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-CarRecognition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C30F94E28329BF3009DEF32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-CarRecognitionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-CarRecognition.app/CoreML-CarRecognition";
+			};
+			name = Debug;
+		};
+		3C30F94F28329BF3009DEF32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-CarRecognitionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-CarRecognition.app/CoreML-CarRecognition";
+			};
+			name = Release;
+		};
+		3C30F95128329BF3009DEF32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-CarRecognitionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-CarRecognition";
+			};
+			name = Debug;
+		};
+		3C30F95228329BF3009DEF32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-CarRecognitionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-CarRecognition";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C30F91B28329BF1009DEF32 /* Build configuration list for PBXProject "CoreML-CarRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C30F94828329BF3009DEF32 /* Debug */,
+				3C30F94928329BF3009DEF32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C30F94A28329BF3009DEF32 /* Build configuration list for PBXNativeTarget "CoreML-CarRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C30F94B28329BF3009DEF32 /* Debug */,
+				3C30F94C28329BF3009DEF32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C30F94D28329BF3009DEF32 /* Build configuration list for PBXNativeTarget "CoreML-CarRecognitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C30F94E28329BF3009DEF32 /* Debug */,
+				3C30F94F28329BF3009DEF32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C30F95028329BF3009DEF32 /* Build configuration list for PBXNativeTarget "CoreML-CarRecognitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C30F95128329BF3009DEF32 /* Debug */,
+				3C30F95228329BF3009DEF32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C30F91828329BF1009DEF32 /* Project object */;
+}

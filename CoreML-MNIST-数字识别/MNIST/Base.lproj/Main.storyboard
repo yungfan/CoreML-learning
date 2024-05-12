@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MNIST" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="识别结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0p-jM-l2Y">
+                                <rect key="frame" x="107" y="797.5" width="200" height="44.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="rfR-mg-9Sa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xp-Eq-5mm" customClass="DrawView" customModule="MNIST" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o0p-jM-l2Y" secondAttribute="bottom" constant="20" id="Nu5-kr-6CN"/>
+                            <constraint firstItem="1xp-Eq-5mm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OZJ-q0-OLf"/>
+                            <constraint firstItem="o0p-jM-l2Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VLQ-SN-Y1S"/>
+                            <constraint firstItem="1xp-Eq-5mm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Znw-4o-uzm"/>
+                            <constraint firstItem="1xp-Eq-5mm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cIb-52-GRR"/>
+                            <constraint firstItem="1xp-Eq-5mm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="l7F-hO-pk8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawView" destination="1xp-Eq-5mm" id="rUB-JT-alJ"/>
+                        <outlet property="result" destination="o0p-jM-l2Y" id="4iZ-BH-7hI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "702D2763-F421-4175-947A-027573ED480E": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "8A078969-25C4-41FB-B298-51694E2E2F77": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "CC1F4A3B-12E1-4BAC-8614-FA7D048A0F4B": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "FruitImageClassifier.mlmodel",
+            "path": "com.apple.CoreML/FruitImageClassifier.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "CC1F4A3B-12E1-4BAC-8614-FA7D048A0F4B"
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreML_CreateML_in_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info and Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4I-tq-Ewb">
+                                <rect key="frame" x="20" y="437.5" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FzA-dO-IDF">
+                                <rect key="frame" x="87" y="178.5" width="240" height="237.5"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="2Fq-1h-AzD"/>
+                                    <constraint firstAttribute="width" constant="240" id="Jut-KO-aE3"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FlA-Ap-X9G" appends="YES" id="GeM-1J-4MS"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViF-wI-5EB">
+                                <rect key="frame" x="147.5" y="498.5" width="119.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Training Model"/>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GDG-6o-NmD">
+                                <rect key="frame" x="20" y="569.5" width="374" height="4"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s4I-tq-Ewb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="21A-H0-l52"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s4I-tq-Ewb" secondAttribute="trailing" constant="20" id="8s9-Ka-cXv"/>
+                            <constraint firstItem="ViF-wI-5EB" firstAttribute="top" secondItem="s4I-tq-Ewb" secondAttribute="bottom" constant="40" id="9k8-ae-Od0"/>
+                            <constraint firstItem="s4I-tq-Ewb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EeV-uH-6rm"/>
+                            <constraint firstItem="GDG-6o-NmD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gdz-vE-bfC"/>
+                            <constraint firstItem="GDG-6o-NmD" firstAttribute="top" secondItem="ViF-wI-5EB" secondAttribute="bottom" constant="40" id="XHQ-sn-ZTk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDG-6o-NmD" secondAttribute="trailing" constant="20" id="dKA-C3-AgB"/>
+                            <constraint firstItem="s4I-tq-Ewb" firstAttribute="top" secondItem="FzA-dO-IDF" secondAttribute="bottom" constant="20" id="imx-AG-fiU"/>
+                            <constraint firstItem="FzA-dO-IDF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="isy-gW-ddW"/>
+                            <constraint firstItem="ViF-wI-5EB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPB-vx-0ig"/>
+                            <constraint firstItem="s4I-tq-Ewb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uWI-FJ-k2e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FzA-dO-IDF" id="a7B-M2-W6L"/>
+                        <outlet property="resultLb" destination="s4I-tq-Ewb" id="Wkm-kJ-D5L"/>
+                        <outlet property="trainButton" destination="ViF-wI-5EB" id="yeU-TA-Qyp"/>
+                        <outlet property="trainingProgress" destination="GDG-6o-NmD" id="ED0-zi-HNm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FlA-Ap-X9G">
+                    <connections>
+                        <action selector="selectData:" destination="BYZ-38-t0r" id="JBl-Cx-FuP"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-239.13043478260872" y="-99.107142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

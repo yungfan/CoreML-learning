@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CB8C867283B766100CBF854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8C866283B766100CBF854 /* AppDelegate.swift */; };
+		3CB8C869283B766100CBF854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8C868283B766100CBF854 /* SceneDelegate.swift */; };
+		3CB8C86B283B766100CBF854 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8C86A283B766100CBF854 /* ViewController.swift */; };
+		3CB8C86E283B766100CBF854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB8C86C283B766100CBF854 /* Main.storyboard */; };
+		3CB8C870283B766200CBF854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB8C86F283B766200CBF854 /* Assets.xcassets */; };
+		3CB8C873283B766200CBF854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB8C871283B766200CBF854 /* LaunchScreen.storyboard */; };
+		3CB8C87E283B766300CBF854 /* CoreML_TextClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8C87D283B766300CBF854 /* CoreML_TextClassifierTests.swift */; };
+		3CB8C888283B766300CBF854 /* CoreML_TextClassifierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8C887283B766300CBF854 /* CoreML_TextClassifierUITests.swift */; };
+		3CB8C88A283B766300CBF854 /* CoreML_TextClassifierUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8C889283B766300CBF854 /* CoreML_TextClassifierUITestsLaunchTests.swift */; };
+		3CB8C897283B77DE00CBF854 /* SpamTextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8C896283B77DE00CBF854 /* SpamTextClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CB8C87A283B766300CBF854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CB8C85B283B766100CBF854 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CB8C862283B766100CBF854;
+			remoteInfo = "CoreML-TextClassifier";
+		};
+		3CB8C884283B766300CBF854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CB8C85B283B766100CBF854 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CB8C862283B766100CBF854;
+			remoteInfo = "CoreML-TextClassifier";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CB8C863283B766100CBF854 /* CoreML-TextClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML-TextClassifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB8C866283B766100CBF854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CB8C868283B766100CBF854 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CB8C86A283B766100CBF854 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CB8C86D283B766100CBF854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CB8C86F283B766200CBF854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CB8C872283B766200CBF854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CB8C874283B766200CBF854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB8C879283B766300CBF854 /* CoreML-TextClassifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-TextClassifierTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB8C87D283B766300CBF854 /* CoreML_TextClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_TextClassifierTests.swift; sourceTree = "<group>"; };
+		3CB8C883283B766300CBF854 /* CoreML-TextClassifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-TextClassifierUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB8C887283B766300CBF854 /* CoreML_TextClassifierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_TextClassifierUITests.swift; sourceTree = "<group>"; };
+		3CB8C889283B766300CBF854 /* CoreML_TextClassifierUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_TextClassifierUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CB8C896283B77DE00CBF854 /* SpamTextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SpamTextClassifier.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CB8C860283B766100CBF854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB8C876283B766300CBF854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB8C880283B766300CBF854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CB8C85A283B766100CBF854 = {
+			isa = PBXGroup;
+			children = (
+				3CB8C865283B766100CBF854 /* CoreML-TextClassifier */,
+				3CB8C87C283B766300CBF854 /* CoreML-TextClassifierTests */,
+				3CB8C886283B766300CBF854 /* CoreML-TextClassifierUITests */,
+				3CB8C864283B766100CBF854 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CB8C864283B766100CBF854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CB8C863283B766100CBF854 /* CoreML-TextClassifier.app */,
+				3CB8C879283B766300CBF854 /* CoreML-TextClassifierTests.xctest */,
+				3CB8C883283B766300CBF854 /* CoreML-TextClassifierUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CB8C865283B766100CBF854 /* CoreML-TextClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				3CB8C896283B77DE00CBF854 /* SpamTextClassifier.mlmodel */,
+				3CB8C866283B766100CBF854 /* AppDelegate.swift */,
+				3CB8C868283B766100CBF854 /* SceneDelegate.swift */,
+				3CB8C86A283B766100CBF854 /* ViewController.swift */,
+				3CB8C86C283B766100CBF854 /* Main.storyboard */,
+				3CB8C86F283B766200CBF854 /* Assets.xcassets */,
+				3CB8C871283B766200CBF854 /* LaunchScreen.storyboard */,
+				3CB8C874283B766200CBF854 /* Info.plist */,
+			);
+			path = "CoreML-TextClassifier";
+			sourceTree = "<group>";
+		};
+		3CB8C87C283B766300CBF854 /* CoreML-TextClassifierTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CB8C87D283B766300CBF854 /* CoreML_TextClassifierTests.swift */,
+			);
+			path = "CoreML-TextClassifierTests";
+			sourceTree = "<group>";
+		};
+		3CB8C886283B766300CBF854 /* CoreML-TextClassifierUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CB8C887283B766300CBF854 /* CoreML_TextClassifierUITests.swift */,
+				3CB8C889283B766300CBF854 /* CoreML_TextClassifierUITestsLaunchTests.swift */,
+			);
+			path = "CoreML-TextClassifierUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CB8C862283B766100CBF854 /* CoreML-TextClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB8C88D283B766300CBF854 /* Build configuration list for PBXNativeTarget "CoreML-TextClassifier" */;
+			buildPhases = (
+				3CB8C85F283B766100CBF854 /* Sources */,
+				3CB8C860283B766100CBF854 /* Frameworks */,
+				3CB8C861283B766100CBF854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreML-TextClassifier";
+			productName = "CoreML-TextClassifier";
+			productReference = 3CB8C863283B766100CBF854 /* CoreML-TextClassifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CB8C878283B766300CBF854 /* CoreML-TextClassifierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB8C890283B766300CBF854 /* Build configuration list for PBXNativeTarget "CoreML-TextClassifierTests" */;
+			buildPhases = (
+				3CB8C875283B766300CBF854 /* Sources */,
+				3CB8C876283B766300CBF854 /* Frameworks */,
+				3CB8C877283B766300CBF854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CB8C87B283B766300CBF854 /* PBXTargetDependency */,
+			);
+			name = "CoreML-TextClassifierTests";
+			productName = "CoreML-TextClassifierTests";
+			productReference = 3CB8C879283B766300CBF854 /* CoreML-TextClassifierTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CB8C882283B766300CBF854 /* CoreML-TextClassifierUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB8C893283B766300CBF854 /* Build configuration list for PBXNativeTarget "CoreML-TextClassifierUITests" */;
+			buildPhases = (
+				3CB8C87F283B766300CBF854 /* Sources */,
+				3CB8C880283B766300CBF854 /* Frameworks */,
+				3CB8C881283B766300CBF854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CB8C885283B766300CBF854 /* PBXTargetDependency */,
+			);
+			name = "CoreML-TextClassifierUITests";
+			productName = "CoreML-TextClassifierUITests";
+			productReference = 3CB8C883283B766300CBF854 /* CoreML-TextClassifierUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CB8C85B283B766100CBF854 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					3CB8C862283B766100CBF854 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					3CB8C878283B766300CBF854 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 3CB8C862283B766100CBF854;
+					};
+					3CB8C882283B766300CBF854 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 3CB8C862283B766100CBF854;
+					};
+				};
+			};
+			buildConfigurationList = 3CB8C85E283B766100CBF854 /* Build configuration list for PBXProject "CoreML-TextClassifier" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CB8C85A283B766100CBF854;
+			productRefGroup = 3CB8C864283B766100CBF854 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CB8C862283B766100CBF854 /* CoreML-TextClassifier */,
+				3CB8C878283B766300CBF854 /* CoreML-TextClassifierTests */,
+				3CB8C882283B766300CBF854 /* CoreML-TextClassifierUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CB8C861283B766100CBF854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB8C873283B766200CBF854 /* LaunchScreen.storyboard in Resources */,
+				3CB8C870283B766200CBF854 /* Assets.xcassets in Resources */,
+				3CB8C86E283B766100CBF854 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB8C877283B766300CBF854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB8C881283B766300CBF854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CB8C85F283B766100CBF854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB8C86B283B766100CBF854 /* ViewController.swift in Sources */,
+				3CB8C897283B77DE00CBF854 /* SpamTextClassifier.mlmodel in Sources */,
+				3CB8C867283B766100CBF854 /* AppDelegate.swift in Sources */,
+				3CB8C869283B766100CBF854 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB8C875283B766300CBF854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB8C87E283B766300CBF854 /* CoreML_TextClassifierTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB8C87F283B766300CBF854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB8C88A283B766300CBF854 /* CoreML_TextClassifierUITestsLaunchTests.swift in Sources */,
+				3CB8C888283B766300CBF854 /* CoreML_TextClassifierUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CB8C87B283B766300CBF854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CB8C862283B766100CBF854 /* CoreML-TextClassifier */;
+			targetProxy = 3CB8C87A283B766300CBF854 /* PBXContainerItemProxy */;
+		};
+		3CB8C885283B766300CBF854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CB8C862283B766100CBF854 /* CoreML-TextClassifier */;
+			targetProxy = 3CB8C884283B766300CBF854 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CB8C86C283B766100CBF854 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CB8C86D283B766100CBF854 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CB8C871283B766200CBF854 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CB8C872283B766200CBF854 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CB8C88B283B766300CBF854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CB8C88C283B766300CBF854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CB8C88E283B766300CBF854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML-TextClassifier/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-TextClassifier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CB8C88F283B766300CBF854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML-TextClassifier/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-TextClassifier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CB8C891283B766300CBF854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-TextClassifierTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-TextClassifier.app/CoreML-TextClassifier";
+			};
+			name = Debug;
+		};
+		3CB8C892283B766300CBF854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-TextClassifierTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-TextClassifier.app/CoreML-TextClassifier";
+			};
+			name = Release;
+		};
+		3CB8C894283B766300CBF854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-TextClassifierUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-TextClassifier";
+			};
+			name = Debug;
+		};
+		3CB8C895283B766300CBF854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-TextClassifierUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-TextClassifier";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CB8C85E283B766100CBF854 /* Build configuration list for PBXProject "CoreML-TextClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB8C88B283B766300CBF854 /* Debug */,
+				3CB8C88C283B766300CBF854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB8C88D283B766300CBF854 /* Build configuration list for PBXNativeTarget "CoreML-TextClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB8C88E283B766300CBF854 /* Debug */,
+				3CB8C88F283B766300CBF854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB8C890283B766300CBF854 /* Build configuration list for PBXNativeTarget "CoreML-TextClassifierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB8C891283B766300CBF854 /* Debug */,
+				3CB8C892283B766300CBF854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB8C893283B766300CBF854 /* Build configuration list for PBXNativeTarget "CoreML-TextClassifierUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB8C894283B766300CBF854 /* Debug */,
+				3CB8C895283B766300CBF854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CB8C85B283B766100CBF854 /* Project object */;
+}

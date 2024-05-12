@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C30F91628327CEA009DEF32 /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C30F91528327CEA009DEF32 /* YOLOv3Tiny.mlmodel */; };
+		3C5F67E728309D890046B16C /* YOLOv3TinyFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F67E628309D890046B16C /* YOLOv3TinyFP16.mlmodel */; };
+		3CABFB68282FE9A200BFB0E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABFB67282FE9A200BFB0E9 /* AppDelegate.swift */; };
+		3CABFB6A282FE9A200BFB0E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABFB69282FE9A200BFB0E9 /* SceneDelegate.swift */; };
+		3CABFB6C282FE9A200BFB0E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABFB6B282FE9A200BFB0E9 /* ViewController.swift */; };
+		3CABFB6F282FE9A200BFB0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CABFB6D282FE9A200BFB0E9 /* Main.storyboard */; };
+		3CABFB71282FE9A300BFB0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CABFB70282FE9A300BFB0E9 /* Assets.xcassets */; };
+		3CABFB74282FE9A300BFB0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CABFB72282FE9A300BFB0E9 /* LaunchScreen.storyboard */; };
+		3CABFB7F282FE9A400BFB0E9 /* CoreML_YOLOv3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABFB7E282FE9A400BFB0E9 /* CoreML_YOLOv3Tests.swift */; };
+		3CABFB89282FE9A400BFB0E9 /* CoreML_YOLOv3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABFB88282FE9A400BFB0E9 /* CoreML_YOLOv3UITests.swift */; };
+		3CABFB8B282FE9A400BFB0E9 /* CoreML_YOLOv3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CABFB8A282FE9A400BFB0E9 /* CoreML_YOLOv3UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CABFB7B282FE9A300BFB0E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CABFB5C282FE9A200BFB0E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CABFB63282FE9A200BFB0E9;
+			remoteInfo = "CoreML-YOLOv3";
+		};
+		3CABFB85282FE9A400BFB0E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CABFB5C282FE9A200BFB0E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CABFB63282FE9A200BFB0E9;
+			remoteInfo = "CoreML-YOLOv3";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C30F91528327CEA009DEF32 /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Tiny.mlmodel; sourceTree = "<group>"; };
+		3C5F67E628309D890046B16C /* YOLOv3TinyFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3TinyFP16.mlmodel; sourceTree = "<group>"; };
+		3CABFB64282FE9A200BFB0E9 /* CoreML-YOLOv3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML-YOLOv3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CABFB67282FE9A200BFB0E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CABFB69282FE9A200BFB0E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CABFB6B282FE9A200BFB0E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CABFB6E282FE9A200BFB0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CABFB70282FE9A300BFB0E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CABFB73282FE9A300BFB0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CABFB75282FE9A300BFB0E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CABFB7A282FE9A300BFB0E9 /* CoreML-YOLOv3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-YOLOv3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CABFB7E282FE9A400BFB0E9 /* CoreML_YOLOv3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_YOLOv3Tests.swift; sourceTree = "<group>"; };
+		3CABFB84282FE9A400BFB0E9 /* CoreML-YOLOv3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-YOLOv3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CABFB88282FE9A400BFB0E9 /* CoreML_YOLOv3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_YOLOv3UITests.swift; sourceTree = "<group>"; };
+		3CABFB8A282FE9A400BFB0E9 /* CoreML_YOLOv3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_YOLOv3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CABFB61282FE9A200BFB0E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CABFB77282FE9A300BFB0E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CABFB81282FE9A400BFB0E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CABFB5B282FE9A200BFB0E9 = {
+			isa = PBXGroup;
+			children = (
+				3CABFB66282FE9A200BFB0E9 /* CoreML-YOLOv3 */,
+				3CABFB7D282FE9A400BFB0E9 /* CoreML-YOLOv3Tests */,
+				3CABFB87282FE9A400BFB0E9 /* CoreML-YOLOv3UITests */,
+				3CABFB65282FE9A200BFB0E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CABFB65282FE9A200BFB0E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CABFB64282FE9A200BFB0E9 /* CoreML-YOLOv3.app */,
+				3CABFB7A282FE9A300BFB0E9 /* CoreML-YOLOv3Tests.xctest */,
+				3CABFB84282FE9A400BFB0E9 /* CoreML-YOLOv3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CABFB66282FE9A200BFB0E9 /* CoreML-YOLOv3 */ = {
+			isa = PBXGroup;
+			children = (
+				3C5F67E628309D890046B16C /* YOLOv3TinyFP16.mlmodel */,
+				3C30F91528327CEA009DEF32 /* YOLOv3Tiny.mlmodel */,
+				3CABFB67282FE9A200BFB0E9 /* AppDelegate.swift */,
+				3CABFB69282FE9A200BFB0E9 /* SceneDelegate.swift */,
+				3CABFB6B282FE9A200BFB0E9 /* ViewController.swift */,
+				3CABFB6D282FE9A200BFB0E9 /* Main.storyboard */,
+				3CABFB70282FE9A300BFB0E9 /* Assets.xcassets */,
+				3CABFB72282FE9A300BFB0E9 /* LaunchScreen.storyboard */,
+				3CABFB75282FE9A300BFB0E9 /* Info.plist */,
+			);
+			path = "CoreML-YOLOv3";
+			sourceTree = "<group>";
+		};
+		3CABFB7D282FE9A400BFB0E9 /* CoreML-YOLOv3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3CABFB7E282FE9A400BFB0E9 /* CoreML_YOLOv3Tests.swift */,
+			);
+			path = "CoreML-YOLOv3Tests";
+			sourceTree = "<group>";
+		};
+		3CABFB87282FE9A400BFB0E9 /* CoreML-YOLOv3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CABFB88282FE9A400BFB0E9 /* CoreML_YOLOv3UITests.swift */,
+				3CABFB8A282FE9A400BFB0E9 /* CoreML_YOLOv3UITestsLaunchTests.swift */,
+			);
+			path = "CoreML-YOLOv3UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CABFB63282FE9A200BFB0E9 /* CoreML-YOLOv3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CABFB8E282FE9A400BFB0E9 /* Build configuration list for PBXNativeTarget "CoreML-YOLOv3" */;
+			buildPhases = (
+				3CABFB60282FE9A200BFB0E9 /* Sources */,
+				3CABFB61282FE9A200BFB0E9 /* Frameworks */,
+				3CABFB62282FE9A200BFB0E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreML-YOLOv3";
+			productName = "CoreML-YOLOv3";
+			productReference = 3CABFB64282FE9A200BFB0E9 /* CoreML-YOLOv3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CABFB79282FE9A300BFB0E9 /* CoreML-YOLOv3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CABFB91282FE9A400BFB0E9 /* Build configuration list for PBXNativeTarget "CoreML-YOLOv3Tests" */;
+			buildPhases = (
+				3CABFB76282FE9A300BFB0E9 /* Sources */,
+				3CABFB77282FE9A300BFB0E9 /* Frameworks */,
+				3CABFB78282FE9A300BFB0E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CABFB7C282FE9A300BFB0E9 /* PBXTargetDependency */,
+			);
+			name = "CoreML-YOLOv3Tests";
+			productName = "CoreML-YOLOv3Tests";
+			productReference = 3CABFB7A282FE9A300BFB0E9 /* CoreML-YOLOv3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CABFB83282FE9A400BFB0E9 /* CoreML-YOLOv3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CABFB94282FE9A400BFB0E9 /* Build configuration list for PBXNativeTarget "CoreML-YOLOv3UITests" */;
+			buildPhases = (
+				3CABFB80282FE9A400BFB0E9 /* Sources */,
+				3CABFB81282FE9A400BFB0E9 /* Frameworks */,
+				3CABFB82282FE9A400BFB0E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CABFB86282FE9A400BFB0E9 /* PBXTargetDependency */,
+			);
+			name = "CoreML-YOLOv3UITests";
+			productName = "CoreML-YOLOv3UITests";
+			productReference = 3CABFB84282FE9A400BFB0E9 /* CoreML-YOLOv3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CABFB5C282FE9A200BFB0E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3CABFB63282FE9A200BFB0E9 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					3CABFB79282FE9A300BFB0E9 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3CABFB63282FE9A200BFB0E9;
+					};
+					3CABFB83282FE9A400BFB0E9 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3CABFB63282FE9A200BFB0E9;
+					};
+				};
+			};
+			buildConfigurationList = 3CABFB5F282FE9A200BFB0E9 /* Build configuration list for PBXProject "CoreML-YOLOv3" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CABFB5B282FE9A200BFB0E9;
+			productRefGroup = 3CABFB65282FE9A200BFB0E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CABFB63282FE9A200BFB0E9 /* CoreML-YOLOv3 */,
+				3CABFB79282FE9A300BFB0E9 /* CoreML-YOLOv3Tests */,
+				3CABFB83282FE9A400BFB0E9 /* CoreML-YOLOv3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CABFB62282FE9A200BFB0E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CABFB74282FE9A300BFB0E9 /* LaunchScreen.storyboard in Resources */,
+				3CABFB71282FE9A300BFB0E9 /* Assets.xcassets in Resources */,
+				3CABFB6F282FE9A200BFB0E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CABFB78282FE9A300BFB0E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CABFB82282FE9A400BFB0E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CABFB60282FE9A200BFB0E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CABFB6C282FE9A200BFB0E9 /* ViewController.swift in Sources */,
+				3CABFB68282FE9A200BFB0E9 /* AppDelegate.swift in Sources */,
+				3C30F91628327CEA009DEF32 /* YOLOv3Tiny.mlmodel in Sources */,
+				3CABFB6A282FE9A200BFB0E9 /* SceneDelegate.swift in Sources */,
+				3C5F67E728309D890046B16C /* YOLOv3TinyFP16.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CABFB76282FE9A300BFB0E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CABFB7F282FE9A400BFB0E9 /* CoreML_YOLOv3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CABFB80282FE9A400BFB0E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CABFB8B282FE9A400BFB0E9 /* CoreML_YOLOv3UITestsLaunchTests.swift in Sources */,
+				3CABFB89282FE9A400BFB0E9 /* CoreML_YOLOv3UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CABFB7C282FE9A300BFB0E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CABFB63282FE9A200BFB0E9 /* CoreML-YOLOv3 */;
+			targetProxy = 3CABFB7B282FE9A300BFB0E9 /* PBXContainerItemProxy */;
+		};
+		3CABFB86282FE9A400BFB0E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CABFB63282FE9A200BFB0E9 /* CoreML-YOLOv3 */;
+			targetProxy = 3CABFB85282FE9A400BFB0E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CABFB6D282FE9A200BFB0E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CABFB6E282FE9A200BFB0E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CABFB72282FE9A300BFB0E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CABFB73282FE9A300BFB0E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CABFB8C282FE9A400BFB0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CABFB8D282FE9A400BFB0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CABFB8F282FE9A400BFB0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML-YOLOv3/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-YOLOv3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CABFB90282FE9A400BFB0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML-YOLOv3/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-YOLOv3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CABFB92282FE9A400BFB0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-YOLOv3Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-YOLOv3.app/CoreML-YOLOv3";
+			};
+			name = Debug;
+		};
+		3CABFB93282FE9A400BFB0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-YOLOv3Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-YOLOv3.app/CoreML-YOLOv3";
+			};
+			name = Release;
+		};
+		3CABFB95282FE9A400BFB0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-YOLOv3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-YOLOv3";
+			};
+			name = Debug;
+		};
+		3CABFB96282FE9A400BFB0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-YOLOv3UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-YOLOv3";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CABFB5F282FE9A200BFB0E9 /* Build configuration list for PBXProject "CoreML-YOLOv3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CABFB8C282FE9A400BFB0E9 /* Debug */,
+				3CABFB8D282FE9A400BFB0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CABFB8E282FE9A400BFB0E9 /* Build configuration list for PBXNativeTarget "CoreML-YOLOv3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CABFB8F282FE9A400BFB0E9 /* Debug */,
+				3CABFB90282FE9A400BFB0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CABFB91282FE9A400BFB0E9 /* Build configuration list for PBXNativeTarget "CoreML-YOLOv3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CABFB92282FE9A400BFB0E9 /* Debug */,
+				3CABFB93282FE9A400BFB0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CABFB94282FE9A400BFB0E9 /* Build configuration list for PBXNativeTarget "CoreML-YOLOv3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CABFB95282FE9A400BFB0E9 /* Debug */,
+				3CABFB96282FE9A400BFB0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CABFB5C282FE9A200BFB0E9 /* Project object */;
+}

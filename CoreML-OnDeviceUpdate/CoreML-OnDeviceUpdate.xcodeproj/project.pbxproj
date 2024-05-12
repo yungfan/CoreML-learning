@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C5093B528419835009DE625 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5093B428419835009DE625 /* Extensions.swift */; };
+		3C61AC642840BFA100A94E0D /* CatDogUpdatable.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C61AC632840BFA100A94E0D /* CatDogUpdatable.mlmodel */; };
+		3CEAA6442834AC3000EF9F85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAA6432834AC3000EF9F85 /* AppDelegate.swift */; };
+		3CEAA6462834AC3000EF9F85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAA6452834AC3000EF9F85 /* SceneDelegate.swift */; };
+		3CEAA6482834AC3000EF9F85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAA6472834AC3000EF9F85 /* ViewController.swift */; };
+		3CEAA64B2834AC3000EF9F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAA6492834AC3000EF9F85 /* Main.storyboard */; };
+		3CEAA64D2834AC3400EF9F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAA64C2834AC3400EF9F85 /* Assets.xcassets */; };
+		3CEAA6502834AC3400EF9F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAA64E2834AC3400EF9F85 /* LaunchScreen.storyboard */; };
+		3CEAA65B2834AC3400EF9F85 /* CoreML_OnDeviceUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAA65A2834AC3400EF9F85 /* CoreML_OnDeviceUpdateTests.swift */; };
+		3CEAA6652834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAA6642834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITests.swift */; };
+		3CEAA6672834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAA6662834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CEAA6572834AC3400EF9F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEAA6382834AC3000EF9F85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEAA63F2834AC3000EF9F85;
+			remoteInfo = "CoreML-OnDeviceUpdate";
+		};
+		3CEAA6612834AC3400EF9F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEAA6382834AC3000EF9F85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEAA63F2834AC3000EF9F85;
+			remoteInfo = "CoreML-OnDeviceUpdate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C5093B428419835009DE625 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3C61AC632840BFA100A94E0D /* CatDogUpdatable.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatDogUpdatable.mlmodel; sourceTree = "<group>"; };
+		3CEAA6402834AC3000EF9F85 /* CoreML-OnDeviceUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML-OnDeviceUpdate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEAA6432834AC3000EF9F85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CEAA6452834AC3000EF9F85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CEAA6472834AC3000EF9F85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CEAA64A2834AC3000EF9F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CEAA64C2834AC3400EF9F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CEAA64F2834AC3400EF9F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CEAA6512834AC3400EF9F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEAA6562834AC3400EF9F85 /* CoreML-OnDeviceUpdateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-OnDeviceUpdateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEAA65A2834AC3400EF9F85 /* CoreML_OnDeviceUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_OnDeviceUpdateTests.swift; sourceTree = "<group>"; };
+		3CEAA6602834AC3400EF9F85 /* CoreML-OnDeviceUpdateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-OnDeviceUpdateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEAA6642834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_OnDeviceUpdateUITests.swift; sourceTree = "<group>"; };
+		3CEAA6662834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_OnDeviceUpdateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CEAA63D2834AC3000EF9F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAA6532834AC3400EF9F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAA65D2834AC3400EF9F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CEAA6372834AC3000EF9F85 = {
+			isa = PBXGroup;
+			children = (
+				3CEAA6422834AC3000EF9F85 /* CoreML-OnDeviceUpdate */,
+				3CEAA6592834AC3400EF9F85 /* CoreML-OnDeviceUpdateTests */,
+				3CEAA6632834AC3400EF9F85 /* CoreML-OnDeviceUpdateUITests */,
+				3CEAA6412834AC3000EF9F85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CEAA6412834AC3000EF9F85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAA6402834AC3000EF9F85 /* CoreML-OnDeviceUpdate.app */,
+				3CEAA6562834AC3400EF9F85 /* CoreML-OnDeviceUpdateTests.xctest */,
+				3CEAA6602834AC3400EF9F85 /* CoreML-OnDeviceUpdateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CEAA6422834AC3000EF9F85 /* CoreML-OnDeviceUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				3C61AC632840BFA100A94E0D /* CatDogUpdatable.mlmodel */,
+				3C5093B428419835009DE625 /* Extensions.swift */,
+				3CEAA6432834AC3000EF9F85 /* AppDelegate.swift */,
+				3CEAA6452834AC3000EF9F85 /* SceneDelegate.swift */,
+				3CEAA6472834AC3000EF9F85 /* ViewController.swift */,
+				3CEAA6492834AC3000EF9F85 /* Main.storyboard */,
+				3CEAA64C2834AC3400EF9F85 /* Assets.xcassets */,
+				3CEAA64E2834AC3400EF9F85 /* LaunchScreen.storyboard */,
+				3CEAA6512834AC3400EF9F85 /* Info.plist */,
+			);
+			path = "CoreML-OnDeviceUpdate";
+			sourceTree = "<group>";
+		};
+		3CEAA6592834AC3400EF9F85 /* CoreML-OnDeviceUpdateTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAA65A2834AC3400EF9F85 /* CoreML_OnDeviceUpdateTests.swift */,
+			);
+			path = "CoreML-OnDeviceUpdateTests";
+			sourceTree = "<group>";
+		};
+		3CEAA6632834AC3400EF9F85 /* CoreML-OnDeviceUpdateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAA6642834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITests.swift */,
+				3CEAA6662834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITestsLaunchTests.swift */,
+			);
+			path = "CoreML-OnDeviceUpdateUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CEAA63F2834AC3000EF9F85 /* CoreML-OnDeviceUpdate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEAA66A2834AC3400EF9F85 /* Build configuration list for PBXNativeTarget "CoreML-OnDeviceUpdate" */;
+			buildPhases = (
+				3CEAA63C2834AC3000EF9F85 /* Sources */,
+				3CEAA63D2834AC3000EF9F85 /* Frameworks */,
+				3CEAA63E2834AC3000EF9F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreML-OnDeviceUpdate";
+			productName = "CoreML-OnDeviceUpdate";
+			productReference = 3CEAA6402834AC3000EF9F85 /* CoreML-OnDeviceUpdate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CEAA6552834AC3400EF9F85 /* CoreML-OnDeviceUpdateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEAA66D2834AC3400EF9F85 /* Build configuration list for PBXNativeTarget "CoreML-OnDeviceUpdateTests" */;
+			buildPhases = (
+				3CEAA6522834AC3400EF9F85 /* Sources */,
+				3CEAA6532834AC3400EF9F85 /* Frameworks */,
+				3CEAA6542834AC3400EF9F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEAA6582834AC3400EF9F85 /* PBXTargetDependency */,
+			);
+			name = "CoreML-OnDeviceUpdateTests";
+			productName = "CoreML-OnDeviceUpdateTests";
+			productReference = 3CEAA6562834AC3400EF9F85 /* CoreML-OnDeviceUpdateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CEAA65F2834AC3400EF9F85 /* CoreML-OnDeviceUpdateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEAA6702834AC3400EF9F85 /* Build configuration list for PBXNativeTarget "CoreML-OnDeviceUpdateUITests" */;
+			buildPhases = (
+				3CEAA65C2834AC3400EF9F85 /* Sources */,
+				3CEAA65D2834AC3400EF9F85 /* Frameworks */,
+				3CEAA65E2834AC3400EF9F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEAA6622834AC3400EF9F85 /* PBXTargetDependency */,
+			);
+			name = "CoreML-OnDeviceUpdateUITests";
+			productName = "CoreML-OnDeviceUpdateUITests";
+			productReference = 3CEAA6602834AC3400EF9F85 /* CoreML-OnDeviceUpdateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CEAA6382834AC3000EF9F85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					3CEAA63F2834AC3000EF9F85 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					3CEAA6552834AC3400EF9F85 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 3CEAA63F2834AC3000EF9F85;
+					};
+					3CEAA65F2834AC3400EF9F85 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 3CEAA63F2834AC3000EF9F85;
+					};
+				};
+			};
+			buildConfigurationList = 3CEAA63B2834AC3000EF9F85 /* Build configuration list for PBXProject "CoreML-OnDeviceUpdate" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CEAA6372834AC3000EF9F85;
+			productRefGroup = 3CEAA6412834AC3000EF9F85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CEAA63F2834AC3000EF9F85 /* CoreML-OnDeviceUpdate */,
+				3CEAA6552834AC3400EF9F85 /* CoreML-OnDeviceUpdateTests */,
+				3CEAA65F2834AC3400EF9F85 /* CoreML-OnDeviceUpdateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CEAA63E2834AC3000EF9F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEAA6502834AC3400EF9F85 /* LaunchScreen.storyboard in Resources */,
+				3CEAA64D2834AC3400EF9F85 /* Assets.xcassets in Resources */,
+				3CEAA64B2834AC3000EF9F85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAA6542834AC3400EF9F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAA65E2834AC3400EF9F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CEAA63C2834AC3000EF9F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5093B528419835009DE625 /* Extensions.swift in Sources */,
+				3CEAA6482834AC3000EF9F85 /* ViewController.swift in Sources */,
+				3CEAA6442834AC3000EF9F85 /* AppDelegate.swift in Sources */,
+				3CEAA6462834AC3000EF9F85 /* SceneDelegate.swift in Sources */,
+				3C61AC642840BFA100A94E0D /* CatDogUpdatable.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAA6522834AC3400EF9F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEAA65B2834AC3400EF9F85 /* CoreML_OnDeviceUpdateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAA65C2834AC3400EF9F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEAA6672834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITestsLaunchTests.swift in Sources */,
+				3CEAA6652834AC3400EF9F85 /* CoreML_OnDeviceUpdateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CEAA6582834AC3400EF9F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEAA63F2834AC3000EF9F85 /* CoreML-OnDeviceUpdate */;
+			targetProxy = 3CEAA6572834AC3400EF9F85 /* PBXContainerItemProxy */;
+		};
+		3CEAA6622834AC3400EF9F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEAA63F2834AC3000EF9F85 /* CoreML-OnDeviceUpdate */;
+			targetProxy = 3CEAA6612834AC3400EF9F85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CEAA6492834AC3000EF9F85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEAA64A2834AC3000EF9F85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CEAA64E2834AC3400EF9F85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEAA64F2834AC3400EF9F85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CEAA6682834AC3400EF9F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CEAA6692834AC3400EF9F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CEAA66B2834AC3400EF9F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML-OnDeviceUpdate/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-OnDeviceUpdate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CEAA66C2834AC3400EF9F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CoreML-OnDeviceUpdate/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-OnDeviceUpdate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CEAA66E2834AC3400EF9F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-OnDeviceUpdateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-OnDeviceUpdate.app/CoreML-OnDeviceUpdate";
+			};
+			name = Debug;
+		};
+		3CEAA66F2834AC3400EF9F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-OnDeviceUpdateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-OnDeviceUpdate.app/CoreML-OnDeviceUpdate";
+			};
+			name = Release;
+		};
+		3CEAA6712834AC3400EF9F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-OnDeviceUpdateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-OnDeviceUpdate";
+			};
+			name = Debug;
+		};
+		3CEAA6722834AC3400EF9F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF8H8R2NAV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yf.develper.apple.CoreML-OnDeviceUpdateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-OnDeviceUpdate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CEAA63B2834AC3000EF9F85 /* Build configuration list for PBXProject "CoreML-OnDeviceUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEAA6682834AC3400EF9F85 /* Debug */,
+				3CEAA6692834AC3400EF9F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEAA66A2834AC3400EF9F85 /* Build configuration list for PBXNativeTarget "CoreML-OnDeviceUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEAA66B2834AC3400EF9F85 /* Debug */,
+				3CEAA66C2834AC3400EF9F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEAA66D2834AC3400EF9F85 /* Build configuration list for PBXNativeTarget "CoreML-OnDeviceUpdateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEAA66E2834AC3400EF9F85 /* Debug */,
+				3CEAA66F2834AC3400EF9F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEAA6702834AC3400EF9F85 /* Build configuration list for PBXNativeTarget "CoreML-OnDeviceUpdateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEAA6712834AC3400EF9F85 /* Debug */,
+				3CEAA6722834AC3400EF9F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CEAA6382834AC3000EF9F85 /* Project object */;
+}
